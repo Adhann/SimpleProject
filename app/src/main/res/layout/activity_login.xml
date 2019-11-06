@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_blue_dark"
+    android:theme="@style/CodeFont"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo_dota"
+        android:layout_width="83dp"
+        android:layout_height="86dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dota"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Username"
+        android:layout_below="@+id/logo_dota"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textColor="#7a7a7a"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:layout_below="@+id/Username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:hint="Underline color change"
+        app:backgroundTint="#7a7a7a"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="#7a7a7a"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#7a7a7a"
+        android:password="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ForgotPassword"
+        android:layout_below="@+id/tvPassword"
+        android:layout_alignRight="@id/tvPassword"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUp"
+        android:layout_below="@id/ForgotPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create_account"
+        android:textSize="20sp"
+        android:background="@drawable/btn1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@id/SignUp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn2"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/login"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/gmail"
+        />
+</RelativeLayout>

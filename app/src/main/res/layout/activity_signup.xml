@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_blue_dark"
+    android:theme="@style/CodeFont"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/logo_dota"
+        android:layout_width="151dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dota"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:layout_below="@+id/logo_dota"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textColor="#7a7a7a"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/Email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:backgroundTint="#7a7a7a"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="#7a7a7a"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#7a7a7a"
+        android:password="true"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUp"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:background="@drawable/btn1"
+        />
+
+</RelativeLayout>
